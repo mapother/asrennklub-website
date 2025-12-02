@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AS Ren Klub Racing Stable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>AS Ren Klub Racing Stable</h1>
+      <p class="tagline">Home of Meistersinger & Friends</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>About Our Stable</h2>
+      <p>
+        AS Ren Klub is a small, passionate racing stable dedicated to the care,
+        training, and performance of our thoroughbreds. This site is a simple
+        home base where we can share race replays and updates with friends,
+        family, and partners.
+      </p>
+    </section>
+
+    <section class="video-section">
+      <h2>Meistersinger – Race Replay</h2>
+      <p class="video-note">
+        If the video doesn’t start automatically, press play. You can expand it
+        to full screen using the icon in the corner.
+      </p>
+
+      <!-- Replace 'meistersinger-race.mp4' with your actual file name -->
+      <video controls preload="metadata" class="race-video">
+        <source src="meistersinger-race.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        For updates, partnership inquiries, or just to say hello, email
+        <a href="mailto:seankerr@novawerke.ai">seankerr@novawerke.ai</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> AS Ren Klub. All rights reserved.</p>
+    </div>
+    <script>
+      // Simple JS to keep the year current
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
